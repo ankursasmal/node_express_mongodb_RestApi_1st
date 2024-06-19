@@ -1,0 +1,47 @@
+<%-  include('./partials/headLink.ejs') %>
+
+<header   >
+    <!-- navbar -->
+<div class="container"  > 
+<div class="d-flex  flex-row align-items-center pb-3 mb-4 border-bottom" style="justify-content: space-between;">
+
+<div style="display: flex;align-items: center;">
+<img id="threeBar"  src="https://thumb.ac-illust.com/c1/c101a9ee214a58a98f6712681e2ced35_t.jpeg" alt=""   >   
+<a  id="txt1">NodeJs</a>
+
+</div>
+
+<nav class="d-inline-flex mt-2 mt-md-0   ">
+<a   class="me-3 txt py-2 link-body-emphasis text-decoration-none" href="/Register">Register</a>
+ <a class="py-2 txt link-body-emphasis text-decoration-none" href="/login">Login</a>
+</nav>
+</div>
+</div>
+</header>
+ <%-  include('./partials/main.ejs') %>
+ <div  style="  width: 100%;display:flex;justify-content:center;margin-top:9vw ;" >
+
+ <form action="/login" method="POST" style="display: flex;flex-direction:column ;width:40vw; padding:4px;  border:2px soild black;" id="shadow">
+    
+
+    <div style="display:flex;margin:10px 5px;flex-direction:column"> 
+            <a style="padding: 5px 0;">Email:</a>
+    <input  type="email"  id="" placeholder="enter email" name="email">
+    </div>
+    <div style="display:flex;margin:10px 5px;flex-direction:column"> 
+            <a style="padding: 5px 0;">Password:</a>
+    
+    <input type="password" name="password" id="" placeholder="enter pasword">
+    </div>
+     
+    <button type="submit" style="padding: 4px 8px;align-self: center;"> submit</button>
+    </form>
+
+                
+</div>
+
+   </div>
+</section>
+    </main> 
+    <%- include('./partials/footer.ejs'); %>
+    <%- include('./partials/footerLink.ejs'); %>
